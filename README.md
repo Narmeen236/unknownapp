@@ -76,7 +76,11 @@ The following prompts were used with AI assistance:
 > "Based on this Java Course Enrollment System, generate a Mermaid use case diagram showing all actors (Student and Admin) and their use cases, with proper styling."
  
 **Prompt 2 — Mermaid flowchart:**
-> "Create a Mermaid flowchart showing the user's flow through the main menu of this Course Enrollment System, including the login menu, student menu, and admin menu. Use color-coded nodes to distinguish Student vs Admin paths."
+> "Create a Mermaid flowchart showing the user's flow through the main menu of this Course Enrollment System, including the login menu, student menu, and admin menu.
  
-**Prompt 3 — Python rewrite:**
-> "Rewrite this Java Course Enrollment System in Python. Implement the full student use cases: view catalog, register for course (with prerequisite, capacity, and time conflict checks), drop course, view schedule, billing summary, and edit profile. Also implement basic admin features. Keep the same CLI interface style as the Java version."
+## Technical Implementation Details:
+* **Target Use Case:** Course Registration & Validation Logic
+* **System Architecture:** Implemented using a Class-based approach to maintain Object-Oriented principles from the original source.
+* **Logic Constraints:** * **Capacity Guard:** Prevents enrollment if `enrolled >= capacity`.
+    * **Prerequisite Filter:** Scans student history to ensure required course codes are present.
+    * **State Management:** Uses local dictionaries to simulate the system's database.
